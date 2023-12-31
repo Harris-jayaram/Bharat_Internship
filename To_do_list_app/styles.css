@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #030303;
+    background-image: url('https://images2.minutemediacdn.com/image/upload/c_crop,h_2164,w_3845,x_0,y_259/f_auto,q_auto,w_1100/v1554918405/shape/mentalfloss/94735-istock-863607936.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+
+.container {
+    text-align: center;
+    color: #070707;
+}
+
+#app {
+    margin-top: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
+}
+
+input:hover {
+    background-color: #183040; /* Hover background color */
+}
+
+button {
+    padding: 10px 16px;
+    cursor: pointer;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60; /* Hover background color */
+}
+
+button i {
+    margin-right: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #161f25;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.5s ease;
+    transition: transform 0.3s ease; /* Added transition effect */
+}
+
+li:hover {
+    transform: scale(1.05); /* Hover scaling effect */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b; /* Hover background color */
+}
+
+.delete-btn i {
+    margin-right: 8px;
+}
+
+.date-time {
+    font-size: 14px;
+    color: #555;
+}
+
+.alarm-icon {
+    margin-right: 8px;
+    color: #e74c3c;
+}
