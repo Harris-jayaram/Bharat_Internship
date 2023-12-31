@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-pzjw8f+ua/C+CMq1EEXm02aVBhPbK2b3pZl7fOENwjIcrO+jBBDAJi1tAafVMS2X" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="header">
+            <i class="fas fa-clipboard-list"></i>
+            <h2>Quiz App</h2>
+        </div>
+        <div id="question-container">
+            <h2 id="question">Question goes here</h2>
+        </div>
+        <div id="options-container" class="options-container">
+            <!-- Options will be dynamically added here using JavaScript -->
+        </div>
+        <br>
+        <center>
+            <button id="next-button" onclick="nextQuestion()">
+                <i class="fas fa-arrow-right"></i> Next
+            </button>
+        </center>
+        <div id="feedback-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

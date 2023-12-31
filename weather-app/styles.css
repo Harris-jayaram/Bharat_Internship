@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f2668;
+    background-image: url('https://th.bing.com/th/id/R.37a6d9776d9ef6b079a9d2d6ea01f2c4?rik=TTKMI45wAA9vLQ&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2flightning-storm-4k-ei.jpg&ehk=LQjhQHFfchL51uau1xpAq3OaGX6huOHtARm7Ln01DV4%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#app-container {
+    text-align: center;
+}
+
+#weather-container {
+    padding: 40px;
+    background-color: #d3d5db;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+#weather-container:hover {
+    transform: scale(1.05);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#header i {
+    font-size: 20px;
+    color: #555;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+#header i:hover {
+    color: #4CAF50; /* Change the color on hover */
+}
+
+#weather-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #555;
+    font-size: 14px;
+    text-align: left;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #4CAF50;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#weather-info {
+    margin-top: 20px;
+    color: #333;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#weather-container:not(:hover) #weather-info {
+    opacity: 0;
+}
